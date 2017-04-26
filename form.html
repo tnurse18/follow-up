@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="google-form.js"></script>
+		<!-- Add your own stylesheet -->
+	</head>
+	<body>
+		<main role="main">
+		<article>
+			<header id="intro">
+				<a style="float: right; cursor: pointer" onclick="history.go(-1)">Exit</a>
+				<h2 id="official_head" style="padding-top: 2%">Welcome!</h2>
+				<p>Form description and/or directions go here.</p>
+				<p style="padding-top: 20px"><span class="required">*</span>Denotes required field</p>
+				<div style="border-bottom: 1px solid gray; margin-bottom: 2%">
+				</div>
+			</header>
+			<div id="form-container">
+			<form id="registration-form">
+				<section id="primary-sec">
+				<div class="form-group">
+					<label><span class="required">*</span>First Name:</label>
+					<input type="text" name="FirstName" id="first-name" class="form-control" placeholder="First Name"></input>
+					</div>
+					<div class="form-group">
+					<label><span class="required">*</span>Last Name:</label>
+					<input type="text" name="LastName" id="last-name" class="form-control" placeholder="Last Name"></input>
+					</div>
+					<div class="form-group">
+					<label><span class="required">*</span>Email:</label>
+					<input type="email" name="Email" id="email" class="form-control" placeholder="jdoe@example.com"></input>
+					</div>
+					<div>
+					<input id="cancel1" type="button" onclick="cancel()" class="btn" value="Cancel" style="float: left; margin-right: 5px"></input>
+					<input id="next1" type="button" onclick="submit()" class="btn btn-primary" value="Submit"></input>
+					</div>
+					<div style="height: 40px">
+					</div>
+				</section>
+			</form>
+			<div>
+			<p style="text-align: center">Powered by: <span></span></p>
+			</div>
+			</div>
+			<section id="thanks">
+				<h2 id="thanks" style="padding-top: 4%; padding-bottom: 2%">Thank You!</h2>
+				<h4 style="color: gray; padding-left: 10px; padding-right: 10px">Thank you for your response. If you ever need to update your registration, check your email for a personalized link.</h4>
+			</section>
+		</article>
+		</main>
+		<footer role="footer"></footer>
+		<script>
+		window.onload = setFields;
+		</script>
+	</body>
+</html>
